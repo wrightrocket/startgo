@@ -1,4 +1,3 @@
-// c358241addcbf9064418d3b85a90c8bf
 package main
 
 import (
@@ -31,7 +30,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func query(city string) (weatherData, error) {
-    resp, err := http.Get("http://api.openweathermap.org/data/2.5/weather?APPID=c358241addcbf9064418d3b85a90c8bf&q=" + city)
+    resp, err := http.Get("http://api.openweathermap.org/data/2.5/weather?APPID=get-at-api.openweathermap.org&q=" + city)
     if err != nil {
         return weatherData{}, err
     }
